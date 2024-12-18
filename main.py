@@ -17,7 +17,7 @@ def main():
     gif_screen = gif_player.GifScreen()
     gif_config = configparser.ConfigParser()
     gif_config.read(config_file_name)
-    gif_screen.init_gif(gif_config['kirby'])
+    gif_screen.init_gif(gif_config['mario'])
 
 
     # setup matrix
@@ -36,8 +36,8 @@ def main():
 
     # generate image
     while(True):
-        frame = spotify_screen.generate_frame()
-        #frame = gif_screen.generate_frame()
+        #frame = spotify_screen.generate_frame()
+        frame = gif_screen.generate_frame()
         if frame is None:
             frame = black_screen
         matrix.SetImage(frame)
