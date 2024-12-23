@@ -1,4 +1,4 @@
-from rgbmatrix import RGBMatrix, RGBMatrixOptions
+from RGBMatrixEmulator import RGBMatrix, RGBMatrixOptions
 from modules import spotify_module
 from apps import spotify_player, gif_player
 from PIL import Image
@@ -8,8 +8,8 @@ def main():
     canvas_width = 64
     canvas_height = 64
 
-    currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-    sys.path.append(currentdir+"/rpi-rgb-led-matrix/bindings/python")
+    #currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+    #sys.path.append(currentdir+"/rpi-rgb-led-matrix/bindings/python")
 
     # connect to spotify
     sp_module = spotify_module.SpotifyModule()

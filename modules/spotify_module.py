@@ -3,9 +3,9 @@ import os
 
 class SpotifyModule:
     def __init__(self):
-        client_id = 'a3d844a73c874bff8d09d05f65f622da'
-        client_secret = '657480db2dab4f09a0fef0c4f318bfef'
-        redirect_uri = 'https://127.0.0.1/callback'
+        client_id = '74f0b3efbb1d4414a58768e5b491698b'
+        client_secret = '1f5d26ab2d524e5c90f80855e827d285'
+        redirect_uri = 'http://localhost:8080/callback'
         os.environ["SPOTIPY_CLIENT_ID"] = client_id
         os.environ["SPOTIPY_CLIENT_SECRET"] = client_secret
         os.environ["SPOTIPY_REDIRECT_URI"] = redirect_uri
